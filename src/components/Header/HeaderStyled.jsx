@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-const HeaderContainer = styled.div``
+const HeaderContainer = styled.div`
+	margin-bottom: 20px;
+`
 
 const HeaderTittle = styled.h1``
 
