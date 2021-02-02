@@ -7,4 +7,7 @@ export const LayoutContainer = styled.section`
 	padding: 40px 10px 0 10px;
 `
 
-export const RecipeContainer = styled.section``
+export const RecipeContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+`

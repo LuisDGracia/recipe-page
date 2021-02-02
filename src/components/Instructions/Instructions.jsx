@@ -1,8 +1,9 @@
+import { InstructionsContainer } from "./InstructionsStyled";
 
 export default function Instructions() {
   return (
-    <div>
-      
-    </div>
+    <InstructionsContainer>
+      Instructions
+    </InstructionsContainer>
   )
 }
