@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IngredientItem, CheckBox, Label, Text } from './ListStyled'
+import { IngredientItem, CheckBox, Label } from './ListStyled'
 
 export default function ListItem({ ingredient, id }) {
 
@@ -12,8 +12,8 @@ export default function ListItem({ ingredient, id }) {
 
 	return (
 		<IngredientItem >
+			<CheckBox type="checkbox" id={id} checked={check} onChange={ () => onChangeHandler() } />
 			<Label htmlFor={id} >{ ingredient }</Label>
-			<CheckBox type="checkbox" id={id} checked onChange={ () => onChangeHandler() } />
 		</IngredientItem>
 	);
 }

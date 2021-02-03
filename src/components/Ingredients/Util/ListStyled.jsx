@@ -4,35 +4,26 @@ const IngredientItem = styled.li`
 	margin-top: 10px;
 
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 `;
 
 const Label = styled.label`
-	width: 20px;
-	height: 20px;
-
-	border: 2px solid black;
-	border-radius: 5px;
-
+	width: 90%;
 	display: inline-block;
 `;
 
 const CheckBox = styled.input`
-  position: absolute;
-  top: -100%;
+	position: relative;
 
-  visibility: hidden;
+	width: 20px;
+	height: 20px;
 
-  &:checked + ${Label} {
-    background-color: black;
-  }
+	&:checked + ${Label} {
+		color: rgba( 0, 0, 0, 0.2 );
+		text-decoration: line-through;
+		text-decoration-color: black;
+	}
 `;
 
-const Text = styled.p`
-	width: calc( 100% - 24px );
-
-	display: inline-block;
-`
-
-export { IngredientItem, CheckBox, Label, Text }
+export { IngredientItem, CheckBox, Label }
