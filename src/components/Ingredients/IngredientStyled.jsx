@@ -6,6 +6,10 @@ const IngredientsContainer = styled.div`
 	margin-top: 20px;
 
 	order: 2;
+
+	@media screen and (min-width: 426px){
+		width: 60%;
+	}
 `
 
 const IngredientsList = styled.ul`

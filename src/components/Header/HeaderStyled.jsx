@@ -23,6 +23,10 @@ const HeaderInfo = styled.p`
 	font-size: 12px;
 
 	display: inline-block;
+
+	@media screen and ( min-width: 426px ){
+		font-size: 16px;
+	}
 `
 
 const InfoDots = styled.img`
